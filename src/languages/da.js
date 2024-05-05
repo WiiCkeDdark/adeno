@@ -202,8 +202,8 @@ export default {
     waitingForPlayersTitle: "Venter på de andre spillere !",
     waitingForPlayersSubtitle:
       "Resultater vil være tilgængelige, når alle er færdige",
-    PreviousQuestion : "← Question Précédente",
-    SkipQuestion : "Passer la question →"
+    PreviousQuestion : "← Tidligere spørgsmål",
+    SkipQuestion : "Spring over →"
   },
   multiplayerResults: {
     title: "Resultaterne",
