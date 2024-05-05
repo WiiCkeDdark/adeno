@@ -204,8 +204,8 @@ export default {
     waitingForPlayersTitle: "Odotetaan muita pelaajia!",
     waitingForPlayersSubtitle:
       "Tulokset ovat saatavilla, kun kaikki ovat lopettaneet",
-    PreviousQuestion: "← Question Précédente",
-    SkipQuestion: "Passer la question →"
+    PreviousQuestion: "← Edellinen kysymys",
+    SkipQuestion: "Ohita kysymys →"
   },
   multiplayerResults: {
     title: "Tulokset ",
