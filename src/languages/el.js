@@ -207,8 +207,8 @@ export default {
     waitingForPlayersTitle: "Περιμένοντας τους άλλους παίκτες!",
     waitingForPlayersSubtitle:
       "Tα αποτελέσματα θα είναι διαθέσιμα μόλις τελειώσουν όλοι.",
-    PreviousQuestion : "← Question Précédente",
-    SkipQuestion : "Passer la question →"
+    PreviousQuestion : "← Προηγούμενη ερώτηση",
+    SkipQuestion : "παραλείψτε την ερώτηση →"
   },
   multiplayerResults: {
     title: "Τα αποτελέσματα",
