@@ -187,8 +187,8 @@ export default {
     indifferent: "Neutrálne",
     waitingForPlayersTitle: "Čakáme na ostatných hráčov!",
     waitingForPlayersSubtitle: "Výsledky budú dostupné, keď všetci dokončia",
-    PreviousQuestion: "← Question Précédente",
-    SkipQuestion: "Passer la question →"
+    PreviousQuestion: "← Predchádzajúca otázka",
+    SkipQuestion: "Preskočiť otázku →"
   },
   multiplayerResults: {
     title: "Výsledky",
