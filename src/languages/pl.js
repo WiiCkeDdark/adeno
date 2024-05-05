@@ -199,6 +199,8 @@ export default {
     indifferent: "Mieszane",
     waitingForPlayersTitle: "Czekamy na pozostałych graczy!",
     waitingForPlayersSubtitle: "Wyniki będą dostępne, gdy wszyscy skończą",
+    PreviousQuestion : "← Question Précédente",
+    SkipQuestion : "Passer la question →"
   },
   multiplayerResults: {
     title: "Wyniki",

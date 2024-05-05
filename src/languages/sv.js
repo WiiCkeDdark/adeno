@@ -196,6 +196,8 @@ export default {
     indifferent: "Mitigerad",
     waitingForPlayersTitle: "Väntar på andra spelare!",
     waitingForPlayersSubtitle: "Resultaten blir tillgängliga när alla är klara",
+    PreviousQuestion : "← Question Précédente",
+    SkipQuestion : "Passer la question →"
   },
   multiplayerResults: {
     title: "Resultat",

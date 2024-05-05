@@ -203,6 +203,8 @@ export default {
     waitingForPlayersTitle: "Ootame teisi mängijaid!",
     waitingForPlayersSubtitle:
       "Tulemused on kättesaadavad, kui kõik on lõpetanud",
+    PreviousQuestion: "← Question Précédente",
+    SkipQuestion: "Passer la question →"
   },
   multiplayerResults: {
     title: "Tulemused",

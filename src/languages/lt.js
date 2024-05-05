@@ -206,6 +206,8 @@ export default {
     indifferent: "Abejingas",
     waitingForPlayersTitle: "Laukiame kitų žaidėjų!",
     waitingForPlayersSubtitle: "Rezultatai bus paskelbti, kai visi baigs.",
+    PreviousQuestion : "← Question Précédente",
+    SkipQuestion : "Passer la question →"
   },
   multiplayerResults: {
     title: "Rezultatai",

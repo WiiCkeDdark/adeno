@@ -201,6 +201,8 @@ export default {
     waitingForPlayersTitle: "Stennija għall-parteċipanti l-oħra!",
     waitingForPlayersSubtitle:
       "Ir-riżultati se jkunu disponibbli ladarba kulħadd ikun temm",
+    PreviousQuestion: "← Question Précédente",
+    SkipQuestion: "Passer la question →"
   },
   multiplayerResults: {
     title: "Ir-Riżultati",

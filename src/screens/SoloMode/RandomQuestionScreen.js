@@ -15,6 +15,7 @@ import getTheme from "../../../assets/data/themes/getTheme";
 import FinishedScreen from "../../components/Solo/FinishedScreen";
 import { auth, db } from "../../../firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
+import NavigationButton from "../../components/NavigationButton";
 
 export default function RandomQuestionScreen({ navigation }) {
   const { user, locale } = useUser();
@@ -121,6 +122,12 @@ export default function RandomQuestionScreen({ navigation }) {
     (theme) => theme.id === questions[currentQuestionIndex]?.category
   );
 
+  const selectQuestion = (currentQuestionIndex, direction, responses) => {
+    if (currentQuestionIndex + direction >= 0) {
+      setCurrentQuestionIndex(currentQuestionIndex + direction);
+    }
+  }
+
   return (
     <BackgroundWrapper>
       <CenteredHeader
@@ -130,6 +137,12 @@ export default function RandomQuestionScreen({ navigation }) {
       <View>
         {currentQuestionIndex !== null ? (
           <>
+          {/* <NavigationButton
+            selectQuestion={selectQuestion}
+            currentQuestionIndex={currentQuestionIndex}
+            questions={questions}
+            responses={answeredQuestions}
+            /> */}
             <QuestionHeader
               themeDetails={themeDetails}
               question={questions[currentQuestionIndex].question}

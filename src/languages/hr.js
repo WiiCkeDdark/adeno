@@ -203,6 +203,8 @@ export default {
     waitingForPlayersTitle: "Várakozás a többi játékosra",
     waitingForPlayersSubtitle:
       "Az eredmények akkor lesznek elérhetők, ha mindenki befejezi.",
+    PreviousQuestion: "← Question Précédente",
+    SkipQuestion: "Passer la question →"
   },
   multiplayerResults: {
     title: "Az eredmények",

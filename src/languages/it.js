@@ -206,6 +206,8 @@ export default {
     waitingForPlayersTitle: "In attesa di altri giocatori!",
     waitingForPlayersSubtitle:
       "I risultati saranno disponibili quando tutti avranno finito",
+    PreviousQuestion: "← Question Précédente",
+    SkipQuestion: "Passer la question →"
   },
   multiplayerResults: {
     title: "I risultati",

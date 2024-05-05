@@ -198,6 +198,8 @@ export default {
     waitingForPlayersTitle: "Gaidām pārējos spēlētājus!",
     waitingForPlayersSubtitle:
       "Rezultāti būs pieejami, tiklīdz visi būs pabeiguši.",
+    PreviousQuestion: "← Question Précédente",
+    SkipQuestion: "Passer la question →"
   },
   multiplayerResults: {
     title: "Rezultāti",

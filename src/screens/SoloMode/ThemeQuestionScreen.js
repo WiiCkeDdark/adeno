@@ -19,6 +19,7 @@ import getTheme from "../../../assets/data/themes/getTheme";
 import FinishedScreen from "../../components/Solo/FinishedScreen";
 import { auth, db } from "../../../firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
+import NavigationButton from "../../components/NavigationButton";
 
 export default function ThemeQuestionScreen({ navigation, route }) {
   const { user, locale } = useUser();
@@ -121,11 +122,28 @@ export default function ThemeQuestionScreen({ navigation, route }) {
     });
   };
 
+  const selectQuestion = (currentQuestionIndex, direction, responses) => {
+    const nextQuestionIndex = currentQuestionIndex + direction;
+    if (nextQuestionIndex >= 0 && nextQuestionIndex < responses.length) {
+      setCurrentQuestionIndex(nextQuestionIndex);
+    }
+  }
+
+
   return (
     <BackgroundWrapper>
       <CenteredThemeHeader theme={themeDetails} handleGoBack={handleGoBack} />
       {currentQuestionIndex !== null ? (
         <>
+        {/* <NavigationButton
+            selectQuestion={selectQuestion}
+            currentQuestionIndex={currentQuestionIndex}
+            questions={questions.filter(
+              (question) => question.category === themeId
+            )}
+            responses={answeredQuestions}
+          /> */}
+
           <QuestionHeader
             question={
               questions.filter((question) => question.category === themeId)[
@@ -134,7 +152,6 @@ export default function ThemeQuestionScreen({ navigation, route }) {
             }
             handleShowContext={handleShowContext}
           />
-
           <FlatList
             data={
               questions.filter((question) => question.category === themeId)[

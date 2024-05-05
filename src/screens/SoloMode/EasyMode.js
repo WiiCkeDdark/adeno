@@ -11,6 +11,7 @@ import ChoicesButton from "../../components/Multiplayer/ChoicesButton";
 import getTheme from "../../../assets/data/themes/getTheme";
 import { doc, addDoc, collection } from "firebase/firestore";
 import { db } from "../../../firebaseConfig";
+import NavigationButton from "../../components/NavigationButton";
 
 const shuffleArray = (array) => {
   let currentIndex = array.length,
@@ -102,12 +103,26 @@ const EasyMode = () => {
     );
   };
 
+  const selectQuestion = (currentQuestionIndex, nmb, responses) => {
+    const selectQuestionIndex = nmb + currentQuestionIndex
+    setCurrentQuestionIndex(selectQuestionIndex)
+    if (nmb === -1) {
+      setResponses(responses.slice(0, selectQuestionIndex))
+    }
+  }
+
   return (
     <BackgroundWrapper bottom>
       <BackButton handleGoBack={handleQuitGame} />
       <ProgressBar
         currentQuestionIndex={currentQuestionIndex}
         totalQuestions={questions.length}
+      />
+      <NavigationButton
+        currentQuestionIndex={currentQuestionIndex}
+        questions={questions}
+        selectQuestion={selectQuestion}
+        responses={responses}
       />
 
       <View style={{ alignSelf: "center" }}>

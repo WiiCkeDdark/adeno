@@ -203,6 +203,8 @@ export default {
     waitingForPlayersTitle: "Wachten op andere spelers!",
     waitingForPlayersSubtitle:
       "Resultaten zijn toegankelijk zodra iedereen klaar is",
+    PreviousQuestion: "← Question Précédente",
+    SkipQuestion: "Passer la question →"
   },
   multiplayerResults: {
     title: "De resultaten",
